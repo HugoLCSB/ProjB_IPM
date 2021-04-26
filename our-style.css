@@ -1,9 +1,53 @@
 .target {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     border: 1px solid #808080;
 }
 
+
 .goal-0 {
-    background-color: #aaaaaa;
+    background-color: rgb(62, 255, 23) !important;
+    width: 48px;
+    height: 48px;
+    
+}
+
+.goal-0.both {
+    background-color: rgb(62, 255, 23) !important;
+    width: 38px;
+    height: 38px;
+    border: 5.5px solid  #d3d3d3;
+}
+
+.goal-0:hover{
+    border: 5.5px solid #808080;
+    width: 38px;
+    height: 38px;
+}
+
+.goal-0:active {
+    background-color: #00a524;
+}
+
+
+.goal-0.both:hover{
+    border: 5.5px solid #808080;
+    width: 38px;
+    height: 38px;
+}
+
+.goal-1{
+    
+    animation-name: test;
+    animation-duration: 0.1s;
+    animation: test 0.1s forwards;
+}
+
+@keyframes test{
+    from{}
+    to{
+        background-color:  #d3d3d3;
+        width: 48px;
+        height: 48px;
+    }
 }

@@ -18,7 +18,13 @@
  * is the top left corner of the grid.
  */
 function processClick(interaction) {
-    //
+    var checkExists = document.getElementsByClassName("goal-0").length;
+    if(checkExists > 0){
+        if(document.getElementsByClassName("goal-0")[0].classList.contains("goal-1")){
+            document.getElementsByClassName("goal-0")[0].classList.remove("goal-1");
+            document.getElementsByClassName("goal-0")[0].classList.add("both");
+        }
+    }
 }
 
 /**
@@ -43,5 +49,11 @@ function processEnd(performance) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Code here executes after the page finishes loading.
+    var checkExists = document.getElementsByClassName("goal-0").length;
+    if(checkExists > 0){
+        if(document.getElementsByClassName("goal-0")[0].classList.contains("goal-1")){
+            document.getElementsByClassName("goal-0")[0].classList.remove("goal-1");
+            document.getElementsByClassName("goal-0")[0].classList.add("both");
+        }
+    }
 });

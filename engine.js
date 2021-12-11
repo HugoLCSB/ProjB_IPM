@@ -94,8 +94,8 @@ async function getSequence() {
         return Promise.resolve(getLocalSequence());
     }
 
-    /*const response = await fetch(
-        'http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/get_sequence.php',
+    const response = await fetch(
+        //'http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/get_sequence.php',
         {
             method: 'POST',
             body: JSON.stringify({
@@ -112,7 +112,7 @@ async function getSequence() {
         return result.data
     } else {
         throw result.errors;
-    }*/
+    }
 }
 
 function getLocalSequence() {

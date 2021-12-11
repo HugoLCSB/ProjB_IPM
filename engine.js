@@ -205,7 +205,7 @@ function showResults() {
 function sendResults() {
     if (performance.hash) {
         fetch(
-            'http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/store_results.php',
+            'https://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/store_results.php',
             {
                 method: 'POST',
                 body: JSON.stringify(performance),

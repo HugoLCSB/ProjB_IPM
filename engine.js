@@ -95,7 +95,7 @@ async function getSequence() {
     }
 
     const response = await fetch(
-        'http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/get_sequence.php',
+        'https://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/get_sequence.php',
         {
             method: 'POST',
             body: JSON.stringify({

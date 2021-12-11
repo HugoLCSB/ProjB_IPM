@@ -94,7 +94,7 @@ async function getSequence() {
         return Promise.resolve(getLocalSequence());
     }
 
-    /*const response = await fetch(
+    const response = await fetch(
         'http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/get_sequence.php',
         {
             method: 'POST',
@@ -106,13 +106,13 @@ async function getSequence() {
         }
     );
 
-    /*let result = await response.json();
+    let result = await response.json();
 
     if (result.success) {
         return result.data
     } else {
         throw result.errors;
-    }*/
+    }
 }
 
 function getLocalSequence() {
@@ -178,11 +178,11 @@ function advanceSequence() {
 function stopSequence() {
     performance.elapsed = (Date.now() - startTime) / 1000;
 
-    //sendResults();
+    sendResults();
 
     document.getElementById('arena').style.display = 'none';
 
-    //showResults();
+    showResults();
 
     if (typeof processEnd == 'function') {
         processEnd(performance);

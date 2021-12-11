@@ -95,7 +95,7 @@ async function getSequence() {
     }
 
     const response = await fetch(
-        'https://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/get_sequence.php',
+        'http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/get_sequence.php',
         {
             method: 'POST',
             body: JSON.stringify({
@@ -205,7 +205,7 @@ function showResults() {
 function sendResults() {
     if (performance.hash) {
         fetch(
-            'https://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/store_results.php',
+            'http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/projb/store_results.php',
             {
                 method: 'POST',
                 body: JSON.stringify(performance),
